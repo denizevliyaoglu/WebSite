@@ -7,7 +7,7 @@
        min-height: 850px;
        margin: auto;
        border-style: solid;
-       border-color: black;
+       border-color:white;
        background-color: white;
 }
 #banner{
@@ -15,9 +15,9 @@
        height: 120px;
        margin: auto;
        border-style: solid;
-       border-color: black;
+       border-color: white;
        border-width: 1px;
-       background-color: rgb(116, 68, 68);
+       background-color: rgb(149, 149, 214);
 }
 #sosyalmedya{
        width: 120px;
@@ -25,19 +25,19 @@
        border-style: none;
        border-color: white;
        border-width: 1px;
-       background-color: rgb(116, 68, 68);
+       background-color: rgb(149, 149, 214);
        float: right;
        position: relative;
        top: 50px;
        right: 10px;
 }
 #anamenu{
-       width: 1000px;
+       width: 998px;
        height: 80px;
        border-style: solid;
-       border-color: black;
+       border-color: white;
        border-width: 1px;
-       background-color: rgb(75, 12, 12);
+       background-color: rgb(181,126,220);
        margin: auto;
 }
 #anamenu ul{
@@ -48,8 +48,8 @@
        border-style: solid;
        border-width: 2px;
        border-radius: 8px;
-       border-color: rgb(133, 43, 43);
-       background-color: rgb(144, 93, 93);
+       border-color: white;
+       background-color: rgb(189,187,215);
        float: left;
        padding: 4px;
        margin-left: 10px;
@@ -80,27 +80,27 @@
        width: 698px;
        min-height: 598px;
        border-style: solid;
-       border-color: black;
+       border-color: white;
        border-width: 1px;
-       background-color: gray;
+       background-color: rgb(204,204,255);
        float: left;
 }
 #yanmenu{
        width: 298px;
        min-height: 598px;
        border-style: solid;
-       border-color: black;
+       border-color: white;
        border-width: 1px;
-       background-color: rgb(86, 86, 86);
+       background-color: rgb(189, 186, 221);
        float: left;
 }
 #altmenu{
        width: 998px;
        min-height: 44px;
        border-style: solid;
-       border-color: black;
+       border-color: white;
        border-width: 1px;
-       background-color: rgb(127, 59, 59);
+       background-color: rgb(189,187,215);
        float: left;
        text-align: center;
        color: black;
@@ -109,7 +109,7 @@
        font-family: Verdana, Geneva, Tahoma, sans-serif;
        font-size: 10px;
        font-weight: bolder;
-       color: black;
+       color: white;
        text-decoration: none;
 }
 #altmenu a:hover{
