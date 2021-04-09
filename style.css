@@ -115,3 +115,13 @@
 #altmenu a:hover{
        color: rgb(29, 75, 75);
 }
+#iletisim-icerik{
+       width: 996px;
+       min-height: 598px;
+       border-style: solid;
+       border-color: white;
+       border-width: 1px;
+       background-color: rgb(204,204,255);
+       float: left;
+}
+
