@@ -154,7 +154,7 @@
 }
 #anketform-icerik{
        width: 998px;
-       min-height: 598px;
+       height: 598px;
        border-style: solid;
        border-color: white;
        border-width: 1px;
@@ -225,7 +225,7 @@
 #formalani{
        position: relative;
        left: 540px;
-       top: -590px;
+       bottom: 585px;
        width: 450px;
        font-family: "Orbitron",sans-serif;
        color: #047ab9;
