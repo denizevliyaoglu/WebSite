@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Lato');
 *{
        margin: 0px;
        padding: 0px;
@@ -18,6 +19,17 @@
        border-color: white;
        border-width: 1px;
        background-color: rgb(149, 149, 214);
+}
+#banner-baslik{
+       color: white;
+       margin: 30px auto;
+       margin-left: 10px;
+       margin-right: 10px;
+       margin-top: 42px;
+       font-size: 42px;
+       font-family: "Orbitron",sans-serif;
+       text-shadow: 3px 3px #d92b6f, -3px -3px #047ab9;
+
 }
 #sosyalmedya{
        width: 120px;
@@ -51,24 +63,25 @@
        border-color: white;
        background-color: rgb(189,187,215);
        float: left;
-       padding: 4px;
+       padding: 15px;
        margin-left: 10px;
-       margin-top: 20px;
+       margin-top: 12px;
        position: relative;
        top: 2px;
        text-align: center;
 }
 #anamenu ul a{
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-       text-decoration: none;
-       font-weight: bold;
-       font-size: 14px;
+       font-family: "Orbitron",sans-serif;
+       color: black;
+       text-shadow: 1px 1px #d92b6f, -1px -1px #047ab9;
+       font-size: 18px;
+       font-weight: bolder;
 }
 #anamenu ul a:link{
        color: black;
 }
 #anamenu ul a:visited{
-       color: gray;
+       color: black;
 }
 #anamenu ul a:hover{
        color: rgb(34, 9, 58);
@@ -93,6 +106,16 @@
        border-width: 1px;
        background-color: rgb(189, 186, 221);
        float: left;
+}
+.yanmenu-paragraf{
+       font-size: 20px;
+       color: rgb(105, 105, 228);
+}
+.yanmenu-baslik{
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       margin-top: 20px;
+       font-size: 25px;
+       color: rgb(24, 47, 91);
 }
 #altmenu{
        width: 998px;
@@ -124,4 +147,99 @@
        background-color: rgb(204,204,255);
        float: left;
 }
+#anasayfavideo{
+       width: 698px;
+       height: 500px;
+       margin-top: 50px;
+}
+#anketform-icerik{
+       width: 998px;
+       min-height: 598px;
+       border-style: solid;
+       border-color: white;
+       border-width: 1px;
+       background-color: rgb(204,204,255);
+       float: left;
+}
+.checkbox{
+       display: block;
+       position: relative;
+       padding-left: 200px;
+       margin-bottom: 10pxpx;
+       cursor: pointer;
+       font-size: 18px;
+}
+.checkbox input{
+       opacity: 0;
+}
+.checkmark-checkbox{
+       position: absolute;
+       top: 0;
+       left: 170px;
+       height: 20px;
+       width: 20px;
+       background-color: #bbb;
+}
+.checkbox input:checked ~ .checkmark-checkbox{
+       background-color: rgb(119, 69, 166);
+}
+.checkmark-checkbox:after{
+       content: "";
+       position: absolute;
+       display: none;
+}
+.checkbox input:checked ~ .checkmark-checkbox:after{
+       display: block;
+}
+.checkbox .checkmark-checkbox:after{
+       left: 9px;
+       top: 5px;
+       width: 5px;
+       height: 10px;
+       border: solid white;
+       border-width: 0 3px 3px 0;
+       -webkit-transform: rotate(45deg);
+       -ms-transform: rotate(45deg);
+       transform: rotate(45deg);
+}
+#anket-h3{
+       color: rgb(70, 9, 70);
+       text-shadow: 1px 1px #d92b6f;
+       margin: auto;
+       margin-left: 10px;
+       margin-top: 10px;
+       font-size: 20px;
+       font-family: "Orbitron",sans-serif;
+}
+#anketalani{
+       position: relative;
+       left: 10px;
+       width: 450px;
+       font-family: "Orbitron",sans-serif;
+       color: #047ab9;
+       text-shadow: 1px 1px rgb(64, 64, 197);
+       font-size: 30px;
+       font-weight: bold;
+       border-color: rgb(156, 67, 156);
+}
+#formalani{
+       position: relative;
+       left: 540px;
+       top: -590px;
+       width: 450px;
+       font-family: "Orbitron",sans-serif;
+       color: #047ab9;
+       text-shadow: 1px 1px rgb(64, 64, 197);
+       font-size: 30px;
+       font-weight: bold;
+       border-color: rgb(156, 67, 156);
+}
+#formtablo{
+       font-weight: normal;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 28px;
+       color: black;
+}
+
+
 
