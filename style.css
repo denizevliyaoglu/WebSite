@@ -19,16 +19,17 @@
        border-color: white;
        border-width: 1px;
        background-color: rgb(149, 149, 214);
+       background-image: url("resimler/arkaplan5.webp");
 }
 #banner-baslik{
-       color: white;
+       color: #52615E;
        margin: 30px auto;
        margin-left: 10px;
        margin-right: 10px;
        margin-top: 42px;
        font-size: 42px;
        font-family: "Orbitron",sans-serif;
-       text-shadow: 3px 3px #d92b6f, -3px -3px #047ab9;
+       text-shadow: 3px 3px #728382, -3px -3px #A0B8B1;
 
 }
 #sosyalmedya{
@@ -37,7 +38,6 @@
        border-style: none;
        border-color: white;
        border-width: 1px;
-       background-color: rgb(149, 149, 214);
        float: right;
        position: relative;
        top: 50px;
@@ -51,6 +51,7 @@
        border-width: 1px;
        background-color: rgb(181,126,220);
        margin: auto;
+       background-image: url("resimler/arkaplan5.webp");
 }
 #anamenu ul{
        list-style-type: none;
@@ -61,10 +62,10 @@
        border-width: 2px;
        border-radius: 8px;
        border-color: white;
-       background-color: rgb(189,187,215);
+       background-color: #a5c3a3;
        float: left;
        padding: 15px;
-       margin-left: 10px;
+       margin-left: 38px;
        margin-top: 12px;
        position: relative;
        top: 2px;
@@ -72,16 +73,16 @@
 }
 #anamenu ul a{
        font-family: "Orbitron",sans-serif;
-       color: black;
-       text-shadow: 1px 1px #d92b6f, -1px -1px #047ab9;
-       font-size: 18px;
+       color: white;
+       text-shadow: 2px 2px #52615E, -1px -1px #047ab9;
+       font-size: 19px;
        font-weight: bolder;
 }
 #anamenu ul a:link{
-       color: black;
+       color: white;
 }
 #anamenu ul a:visited{
-       color: black;
+       color: white;
 }
 #anamenu ul a:hover{
        color: rgb(34, 9, 58);
@@ -97,6 +98,7 @@
        border-width: 1px;
        background-color: rgb(204,204,255);
        float: left;
+       background-image: url("resimler/arkaplan5.webp");
 }
 #yanmenu{
        width: 298px;
@@ -106,16 +108,18 @@
        border-width: 1px;
        background-color: rgb(189, 186, 221);
        float: left;
+       background-image: url("resimler/arkaplan5.webp");
+       
 }
-.yanmenu-paragraf{
-       font-size: 20px;
-       color: rgb(105, 105, 228);
-}
-.yanmenu-baslik{
-       font-family: Georgia, 'Times New Roman', Times, serif;
-       margin-top: 20px;
-       font-size: 25px;
-       color: rgb(24, 47, 91);
+
+.yanmenu-icerik{
+       color: #919D90;
+       text-shadow: -1px -1px white;
+       border-style:double;
+       font-size: 24px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-weight: bolder;
+
 }
 #altmenu{
        width: 998px;
@@ -127,12 +131,13 @@
        float: left;
        text-align: center;
        color: black;
+       background-image: url("resimler/arkaplan5.webp");
 }
 #altmenu a{
        font-family: Verdana, Geneva, Tahoma, sans-serif;
        font-size: 10px;
        font-weight: bolder;
-       color: white;
+       color: black;
        text-decoration: none;
 }
 #altmenu a:hover{
@@ -144,8 +149,11 @@
        border-style: solid;
        border-color: white;
        border-width: 1px;
-       background-color: rgb(204,204,255);
        float: left;
+       background-image: url("resimler/arkaplan12.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: 100%;
 }
 #anasayfavideo{
        width: 698px;
@@ -158,7 +166,10 @@
        border-style: solid;
        border-color: white;
        border-width: 1px;
-       background-color: rgb(204,204,255);
+       background-image: url("resimler/arkaplan13.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
        float: left;
 }
 .checkbox{
@@ -181,7 +192,7 @@
        background-color: #bbb;
 }
 .checkbox input:checked ~ .checkmark-checkbox{
-       background-color: rgb(119, 69, 166);
+       background-color: #5a6f69;
 }
 .checkmark-checkbox:after{
        content: "";
@@ -203,8 +214,8 @@
        transform: rotate(45deg);
 }
 #anket-h3{
-       color: rgb(70, 9, 70);
-       text-shadow: 1px 1px #d92b6f;
+       color: #52615E;
+       text-shadow: 1px 1px #728382;
        margin: auto;
        margin-left: 10px;
        margin-top: 10px;
@@ -216,30 +227,62 @@
        left: 10px;
        width: 450px;
        font-family: "Orbitron",sans-serif;
-       color: #047ab9;
-       text-shadow: 1px 1px rgb(64, 64, 197);
+       color: #52615E;
+       text-shadow: 1px 1px #728382;
        font-size: 30px;
        font-weight: bold;
-       border-color: rgb(156, 67, 156);
+       border-color: #A0B8B1;
 }
 #formalani{
        position: relative;
        left: 540px;
-       bottom: 585px;
+       bottom: 600px;
+       top: -595px;
        width: 450px;
        font-family: "Orbitron",sans-serif;
-       color: #047ab9;
-       text-shadow: 1px 1px rgb(64, 64, 197);
+       color: #526155;
+       text-shadow: 1px 1px #728382;
        font-size: 30px;
        font-weight: bold;
-       border-color: rgb(156, 67, 156);
+       border-color: #A0B8B1;
 }
 #formtablo{
        font-weight: normal;
-       font-family: 'Times New Roman', Times, serif;
-       font-size: 28px;
-       color: black;
+       font-family: "Orbitron",sans-serif;
+       font-size: 26px;
+       font-weight: bold;
+       color: #526155;
+       text-shadow: 1px 1px #728382;
 }
+#formyazi{
+       position: relative;
+       bottom: 595px;
+       text-align: right;
+       font-size: 20px;
+       font-weight: bolder;
+       color: #526155;
+}
+.formsubmit{
+       position: relative;
+       bottom: 5px;
+       left: 2px;
+       font-size: 15px;
+       background-color: #a8bbb5;
+}
+#makale-icerik{
+              width: 996px;
+              min-height: 598px;
+              border-style: solid;
+              border-color: white;
+              border-width: 1px;
+              background-image: url("resimler/arkaplan12.jpg");
+              height: 100%;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              float: left;
+}
+
 
 
 
