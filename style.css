@@ -22,13 +22,13 @@
        background-image: url("resimler/arkaplan5.webp");
 }
 #banner-baslik{
-       color: #52615E;
        margin: 30px auto;
        margin-left: 10px;
        margin-right: 10px;
        margin-top: 42px;
        font-size: 42px;
        font-family: "Orbitron",sans-serif;
+       color: #52615E;
        text-shadow: 3px 3px #728382, -3px -3px #A0B8B1;
 
 }
@@ -275,13 +275,216 @@
               border-style: solid;
               border-color: white;
               border-width: 1px;
-              background-image: url("resimler/arkaplan12.jpg");
+              background-image: url("resimler/arkaplan13.jpg");
               height: 100%;
               background-position: center;
               background-repeat: no-repeat;
               background-size: cover;
               float: left;
 }
+.div-makale{
+       float: left;
+       position: relative;
+       margin-left: 16px;
+       margin-top: 20px;
+       position: relative;
+       margin-top: 200px;
+}
+#div-html{
+       position: relative;
+       margin-top: 80px;
+       left: 200px;
+       border-style: double;
+       border-color: #9186a2;
+       width: 225px;
+       height: 200px;
+       text-align: center;
+       font-size: 50px;
+       background-image: url("resimler/makale8.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color: #719293;
+}
+#div-css{
+       position: relative;
+       margin-top: 80px;
+       left: 300px;
+       border-style: double;
+       border-color:#9186a2;
+       width: 225px;
+       height: 200px;
+       text-align: center;
+       font-size: 50px;
+       background-image: url("resimler/makale8.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color: #afb2a8;
+}
+#div-js{
+       position: relative;
+       margin-top: 340px;
+       right: 290px;
+       border-style: double;
+       border-color:#9186a2;
+       width: 225px;
+       height: 200px;
+       text-align: center;
+       font-size: 50px;
+       background-image: url("resimler/makale8.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color: #719293;
+}
+#div-php{
+       position: relative;
+       margin-top: 340px;
+       right: 190px;
+       border-style: double;
+       border-color: #9186a2;
+       width: 225px;
+       height: 200px;
+       text-align: center;
+       font-size: 50px;
+       background-image: url("resimler/makale8.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color:#afb2a8;
+}
+#div-html a{
+       font-family: "Orbitron",sans-serif;
+       color: #5c5472;
+       text-shadow: 2px 2px #a2a4c2, -2px -2px #e0dded;
+       font-size: 50px;
+       font-weight: bolder;
+       position: relative;
+       top: 50px;
+}
+#div-html a:hover{
+       color:white;
+}
+#div-css a{
+       font-family: "Orbitron",sans-serif;
+       color: #5c5472;
+       text-shadow: 2px 2px #a2a4c2, -2px -2px #e0dded;
+       font-size: 50px;
+       font-weight: bolder;
+       position: relative;
+       top: 50px;
+}
+#div-css a:hover{
+       color: white;
+}
+#div-js a{
+       font-family: "Orbitron",sans-serif;
+       color: #5c5472;
+       text-shadow: 2px 2px #a2a4c2, -2px -2px #e0dded;
+       font-size: 50px;
+       font-weight: bolder;
+       position: relative;
+       top: 30px;
+}
+#div-js a:hover{
+       color: white;
+}
+#div-php a{
+       font-family: "Orbitron",sans-serif;
+       color: #5c5472;
+       text-shadow: 2px 2px #a2a4c2, -2px -2px #e0dded;
+       font-size: 50px;
+       font-weight: bolder;
+       position: relative;
+       top: 50px;
+}
+#div-php a:hover{
+       color:white;
+}
+.html-makale-paragraf{
+       color: #52615E;
+       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-weight: bold;
+       position: relative;
+       left: 4px;
+}
+.html-makale-paragraf h1{
+       position: relative;
+       top: 20px;
+       font-size: 50px;
+       color: #293e3a;
+}
+.html-makale-paragraf ul{
+       font-weight: bold;
+       color:#66827c;
+       position: relative;
+       top: 5px;
+       left: 20px;
+}
+.css-makale-paragraf{
+       color: #52615E;
+       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-weight: bold;
+       position: relative;
+       left: 4px;
+}
+.css-makale-paragraf h1{
+       position: relative;
+       top: 20px;
+       font-size: 50px;
+       color: #293e3a;
+}
+.css-makale-paragraf ol{
+       font-weight: bold;
+       color:#66827c;
+       position: relative;
+       top: 5px;
+       left: 20px;
+}
+.js-makale-paragraf{
+       color: #52615E;
+       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-weight: bold;
+       position: relative;
+       left: 4px;
+}
+.js-makale-paragraf h1{
+       position: relative;
+       top: 20px;
+       font-size: 50px;
+       color: #293e3a;
+}
+.js-makale-paragraf ul{
+       font-weight: bold;
+       color:#66827c;
+       position: relative;
+       top: 5px;
+       left: 20px;
+}
+.php-makale-paragraf{
+       color: #52615E;
+       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-weight: bold;
+       position: relative;
+       left: 4px;
+}
+.php-makale-paragraf h1{
+       position: relative;
+       top: 20px;
+       font-size: 50px;
+       color: #293e3a;
+}
+.php-makale-paragraf ul{
+       font-weight: bold;
+       color:#66827c;
+       position: relative;
+       top: 5px;
+       left: 20px;
+}
+
+
+
 
 
 
