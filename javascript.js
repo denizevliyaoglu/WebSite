@@ -1,25 +1,103 @@
-const startButton=document.getElementById('start-btn')
-const nextButton=document.getElementById('next-btn')
-const questionContainerElement=document.getElementById('question-container')
-const questionElement=document.getElementById('question')
-const answerButtonsElement=document.getElementById('answer-buttons')
+(function(){
+       function buildQuiz(){
+         const output = [];
 
-let shuffledQuestions, currentQuestionIndex
+         myQuestions.forEach(
+           (currentQuestion, questionNumber) => {
+             const answers = [];
+             for(letter in currentQuestion.answers){
+               answers.push(
+                 `<label>
+                   <input type="radio" name="question${questionNumber}" value="${letter}">
+                   ${letter} :
+                   ${currentQuestion.answers[letter]}
+                 </label>`
+               );
+             }
+             output.push(
+               `<div class="question"> ${currentQuestion.question} </div>
+               <div class="answers"> ${answers.join('')} </div>`
+             );
+           }
+         );
+         quizContainer.innerHTML = output.join('');
+       }
+       function showResults(){
+         const answerContainers = quizContainer.querySelectorAll('.answers');
+         let numCorrect = 0;
+         myQuestions.forEach( (currentQuestion, questionNumber) => {
+           const answerContainer = answerContainers[questionNumber];
+           const selector = `input[name=question${questionNumber}]:checked`;
+           const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+     
 
-startButton.addEventListener('click',startGame)
-nextButton.addEventListener('click', () =>{
-       currentQuestionIndex++
-       setNextQuestion()
-})
+           if(userAnswer === currentQuestion.correctAnswer){
+             numCorrect++;
 
-function startGame(){
-       startButton.classList.add('hide')
-       shuffledQuestions=questions.sort(()=>Math.random()- .5)
-       currentQuestionIndex=0
-       questionContainerElement.classList.remove('hide')
-       setNextQuestion()
-}
-function setNextQuestion(){
-       resetState()
-       showQuestion(shuffledQuestions[currentQuestionIndex])
-}
+             answerContainers[questionNumber].style.color = 'lightgreen';
+           }
+           else{
+             answerContainers[questionNumber].style.color = 'red';
+           }
+         });
+         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+       }
+     
+       const quizContainer = document.getElementById('quiz');
+       const resultsContainer = document.getElementById('results');
+       const submitButton = document.getElementById('submit');
+       const myQuestions = [
+         {
+           question: "Hangi HTML öğesi bir belgenin başlığını tanımlar?",
+           answers: {
+             a: "head",
+             b: "meta",
+             c: "title"
+           },
+           correctAnswer: "c"
+         },
+         {
+           question: "# işareti hangi seçiciyi belirtir?",
+           answers: {
+             a: "class",
+             b: "id",
+             c: "tag"
+           },
+           correctAnswer: "b"
+         },
+         {
+           question: "Harici (bağlantılı) CSS kullanımında stil şablonu nerede belirtilir?",
+           answers: {
+             a: "body etiketinin içinde",
+             b: "Sayfanın en başında",
+             c: "Sayfanın en sonunda",
+             d: "head../head etiketlerinin arasında"
+           },
+           correctAnswer: "d"
+         },
+         {
+              question: "JavaScript'i hangi HTML öğesinin içine ekleriz?",
+              answers: {
+                a: "javascript",
+                b: "script",
+                c: "scripting",
+                d: "js"
+
+              },
+              correctAnswer: "b"
+            },
+            {
+              question: "JavaScript'te, 'MyFunction' adlı bir işlev nasıl çağırılır?",
+              answers: {
+                a: "call function myFunction()",
+                b: "myFunction()",
+                c: "call myFunction()"
+              },
+              correctAnswer: "b"
+            }
+       ];
+
+       buildQuiz();
+     
+       submitButton.addEventListener('click', showResults);
+     })();
