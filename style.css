@@ -19,7 +19,10 @@
        border-color: white;
        border-width: 1px;
        background-color: rgb(149, 149, 214);
-       background-image: url("resimler/arkaplan5.webp");
+       background-image: url("resimler/arkaplan13.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
 }
 #banner-baslik{
        margin: 30px auto;
@@ -51,7 +54,10 @@
        border-width: 1px;
        background-color: rgb(181,126,220);
        margin: auto;
-       background-image: url("resimler/arkaplan5.webp");
+       background-image: url("resimler/arkaplan13.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
 }
 #anamenu ul{
        list-style-type: none;
@@ -112,12 +118,14 @@
        border-width: 1px;
        background-color: rgb(189, 186, 221);
        float: left;
-       background-image: url("resimler/arkaplan5.webp");
-       
+       background-image: url("resimler/white5.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
 }
 
 .yanmenu-icerik{
-       color: #919D90;
+       color: #646d64;
        text-shadow: -1px -1px white;
        border-style:double;
        font-size: 24px;
@@ -135,7 +143,10 @@
        float: left;
        text-align: center;
        color: black;
-       background-image: url("resimler/arkaplan5.webp");
+       background-image: url("resimler/arkaplan13.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
 }
 #altmenu a{
        font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -154,10 +165,33 @@
        border-color: white;
        border-width: 1px;
        float: left;
-       background-image: url("resimler/arkaplan12.jpg");
+       background-image: url("resimler/white9.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: 100%;
+}
+#iletisim-div{
+       position: relative;
+       margin-top: -2px;
+       border-style: double;
+       border-color: #9186a2;
+       width: 598px;
+       height: 400px;
+       text-align: center;
+       font-size: 20px;
+       background-image: url("resimler/white2.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color: #719293;
+}
+#konum{
+       position: relative;
+       margin-top: -2px;
+       border-style: double;
+       border-color: #9186a2;
+       width: 600px;
+       height: 150px;
 }
 #anasayfavideo{
        width: 698px;
@@ -170,16 +204,17 @@
        border-style: solid;
        border-color: white;
        border-width: 1px;
-       background-image: url("resimler/arkaplan13.jpg");
+       background-image: url("resimler/white3.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
        float: left;
+       color: rgb(1, 91, 1);
 }
 .checkbox{
-       display: block;
+       display: inline;
        position: relative;
-       padding-left: 200px;
+       padding-left: 50px;
        margin-bottom: 10pxpx;
        cursor: pointer;
        font-size: 18px;
@@ -190,13 +225,13 @@
 .checkmark-checkbox{
        position: absolute;
        top: 0;
-       left: 170px;
+       left: 20px;
        height: 20px;
        width: 20px;
        background-color: #bbb;
 }
 .checkbox input:checked ~ .checkmark-checkbox{
-       background-color: #5a6f69;
+       background-color: #a5c3a3;
 }
 .checkmark-checkbox:after{
        content: "";
@@ -207,8 +242,8 @@
        display: block;
 }
 .checkbox .checkmark-checkbox:after{
-       left: 9px;
-       top: 5px;
+       left: 6px;
+       top: 3px;
        width: 5px;
        height: 10px;
        border: solid white;
@@ -224,26 +259,21 @@
        margin-left: 10px;
        margin-top: 10px;
        font-size: 20px;
-       font-family: "Orbitron",sans-serif;
+       font-family:'Pargolin',cursive;
 }
 #anketalani{
        position: relative;
-       left: 10px;
-       width: 450px;
-       font-family: "Orbitron",sans-serif;
-       color: #52615E;
-       text-shadow: 1px 1px #728382;
-       font-size: 30px;
-       font-weight: bold;
+       width: 996px;
+       height: 596px;
+       color: #62807b;
        border-color: #A0B8B1;
+       font-size: 15px;
 }
 #formalani{
        position: relative;
-       left: 540px;
-       bottom: 600px;
-       top: -595px;
-       width: 450px;
-       font-family: "Orbitron",sans-serif;
+       width: 996px;
+       height: 596px;
+       font-family:'Pargolin',cursive;
        color: #526155;
        text-shadow: 1px 1px #728382;
        font-size: 30px;
@@ -252,7 +282,7 @@
 }
 #formtablo{
        font-weight: normal;
-       font-family: "Orbitron",sans-serif;
+       font-family:'Pargolin',cursive;
        font-size: 26px;
        font-weight: bold;
        color: #526155;
@@ -260,31 +290,110 @@
 }
 #formyazi{
        position: relative;
-       bottom: 595px;
-       text-align: right;
+       margin-top: -90px;
+       margin-left: 20px;
+       text-align: left;
        font-size: 20px;
        font-weight: bolder;
        color: #526155;
 }
-.formsubmit{
+
+.div-anketform{
+       float: left;
        position: relative;
-       bottom: 5px;
-       left: 2px;
-       font-size: 15px;
-       background-color: #a8bbb5;
+       margin-left: 16px;
+       margin-top: 20px;
+       position: relative;
+       margin-top: 200px;
 }
+#div-anket{
+       position: relative;
+       margin-top: 200px;
+       left: 200px;
+       border-style: double;
+       border-color: #9186a2;
+       width: 225px;
+       height: 200px;
+       text-align: center;
+       font-size: 50px;
+       background-image: url("resimler/white2.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color: #719293;
+}
+#div-form{
+       position: relative;
+       margin-top: 200px;
+       left: 300px;
+       border-style: double;
+       border-color:#9186a2;
+       width: 225px;
+       height: 200px;
+       text-align: center;
+       font-size: 50px;
+       background-image: url("resimler/white2.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color: #afb2a8;
+}
+#div-anket a{
+       font-family: "Orbitron",sans-serif;
+       color: #5c5472;
+       text-shadow: 2px 2px #a2a4c2, -2px -2px #e0dded;
+       font-size: 33px;
+       font-weight: bolder;
+       position: relative;
+       top: 30px;
+}
+#div-anket a:hover{
+       color:white;
+}
+.anketformsubmit{
+	font-family: "Orbitron",sans-serif;
+	font-size: 18px;
+       font-weight: bold;
+	background-color: #a5c3a3;
+       text-shadow: 2px 2px #52615E, -1px -1px #047ab9;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 2px;
+	cursor: pointer;
+	margin-bottom: 20px;
+       position: relative;
+       top: -10px;
+       left: 20px;
+}
+.anketformsubmit:hover{
+	background-color: #7cb978;
+}
+#div-form a{
+       font-family: "Orbitron",sans-serif;
+       color: #5c5472;
+       text-shadow: 2px 2px #a2a4c2, -2px -2px #e0dded;
+       font-size: 20px;
+       font-weight: bolder;
+       position: relative;
+       top: 30px;
+}
+#div-form a:hover{
+       color: white;
+}
+
 #makale-icerik{
-              width: 996px;
-              min-height: 598px;
-              border-style: solid;
-              border-color: white;
-              border-width: 1px;
-              background-image: url("resimler/arkaplan13.jpg");
-              height: 100%;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-              float: left;
+       width: 996px;
+       min-height: 598px;
+       border-style: solid;
+       border-color: white;
+       border-width: 1px;
+       background-image: url("resimler/white2.jpg");
+       height: 100%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       float: left;
 }
 .div-makale{
        float: left;
@@ -486,8 +595,6 @@
        top: 5px;
        left: 20px;
 }
-
-
 #sinav-icerik{
        width: 996px;
        min-height: 598px;
@@ -495,31 +602,41 @@
        border-color: white;
        border-width: 1px;
        float: left;
-       background-image: url("resimler/arkaplan12.jpg");
+       background-image: url("resimler/white6.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: 100%;
+       
 }
 .question{
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight: 600;
+       color: #475c45;
 }
 .answers {
-  margin-bottom: 20px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-weight: bold;
+       margin-bottom: 25px;
+       color: #476044;
 }
 .answers label{
-  display: block;
+       display: block;
 }
 #submit{
-	font-family: sans-serif;
+	font-family: "Orbitron",sans-serif;
 	font-size: 20px;
-	background-color: #279;
+       font-weight: bold;
+	background-color: #a5c3a3;
+       text-shadow: 2px 2px #52615E, -1px -1px #047ab9;
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
-	padding: 20px;
+	padding: 2px;
 	cursor: pointer;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
+       position: relative;
+       margin-top: 5px;
 }
 #submit:hover{
-	background-color: #38a;
+	background-color: #7cb978;
 }
