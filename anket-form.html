@@ -24,119 +24,28 @@
                             <ul>
                                    <li><a href="index.html">Anasayfa</a></li>
                                    <li><a href="makale.html">Makaleler</a></li>
-                                   <li><a href="sinav.html">Deneme</a></li>
+                                   <li><a href="sinav.html">Sınav</a></li>
                                    <li><a href="anket-form.html">Anket/Form</a></li>
                                    <li><a href="iletisim.html">İletişim</a></li>
                             </ul>
                      </nav>
 
                      <article id="anketform-icerik">
-                            <form name="anket1" action="anket.php" method="GET">
-                                   <fieldset id="anketalani"><legend>ANKET ALANI</legend>
-                                          <h3 id="anket-h3">HTML SEVİYENİZ?</h3>
-                                          <label class="checkbox">İyi<input type="checkbox" checked="checked">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Orta<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Kötü<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <h3 id="anket-h3">CSS SEVİYENİZ?</h3>
-                                          <label class="checkbox">İyi<input type="checkbox" checked="checked">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Orta<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Kötü<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <h3 id="anket-h3">JAVASCRIPT SEVİYENİZ?</h3>
-                                          <label class="checkbox">İyi<input type="checkbox" checked="checked">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Orta<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Kötü<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <h3 id="anket-h3">PHP SEVİYENİZ?</h3>
-                                          <label class="checkbox">İyi<input type="checkbox" checked="checked">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Orta<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Kötü<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <h3 id="anket-h3">SQL SEVİYENİZ?</h3>
-                                          <label class="checkbox">İyi<input type="checkbox" checked="checked">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Orta<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <label class="checkbox">Kötü<input type="checkbox">
-                                                 <span class="checkmark-checkbox"></span>
-                                          </label>
-                                          <hr>
-                                          <input class="formsubmit" type="submit"><input class="formsubmit" type="reset">
-                                   </fieldset>
-                            </form>
-
-                            <form name="form1" action="form.php" method="GET">
-                                   <fieldset id="formalani"><legend>FORM ALANI</legend>
-                                          <table id="formtablo" border="0">
-                                                 <tr>
-                                                     <td>Ad Soyad: </td>
-                                                     <td><input type="text" name="adsoyad"> </td>
-                                                 </tr>
-                                                 <tr>
-                                                     <td>E-mail: </td>
-                                                     <td><input type="text" name="mail"> </td>
-                                                 </tr>
-                                                 <tr>
-                                                     <td>Telefon No: </td>
-                                                     <td><input type="text" name="mail" placeholder="(___)(_______)"> </td>
-                                                 </tr> 
-                                                 
-                                                 <tr>
-                                                     <td>TC Kimlik No: </td>
-                                                     <td><input type="text" name="tckimlik" placeholder="11 hane olmalıdır."> </td>
-                                                 </tr>
-                                                 
-                                                 <tr>
-                                                     <td>Hangi dersi almak istiyorsunuz?</td>
-                                                     <td>
-                                                     <label style="font-size: 20px;" for="htmlders">HTML  </label><input type="checkbox" id="htmlders" value="htmlders"><br>
-                                                     <label style="font-size: 20px;"  for="cssders">CSS  </label><input type="checkbox" id="cssders" value="cssders"><br>
-                                                     <label style="font-size: 20px;"  for="jsders">JAVASCRIPT  </label><input type="checkbox" id="jsders" value="jsders">
-                                                     <label style="font-size: 20px;"  for="phpders">PHP  </label><input type="checkbox" id="phpders" value="phpders"><br>
-                                                     <label style="font-size: 20px;"  for="sqlders">SQL  </label><input type="checkbox" id="sqlders" value="sqlders">
-                                                     </td>
-                                                 </tr>
-                                                 
-                                                 <tr>
-                                                     <td>Mesaj: </td>
-                                                     <td><textarea cols="22" rows="10" name="mesaj"></textarea> </td>
-                                                 </tr>                                   
-                                             </table>
-                                             <hr>
-                                             <input class="formsubmit" type="submit"><input class="formsubmit" type="reset">
-                                   </fieldset>
-                            </form>
-                            <p id="formyazi">FORM ALANI'ndan bilgileri doldurarak,<br> öğrenmek istediğiniz dili seçip bize gönderebilirsiniz.</p>
+                            <div id="ana-div">
+                                 <div class="div-anketform" id="div-anket">
+                                        <a id="html-link" href="anket.html">ANKET DOLDURUN</a>
+                                 </div>   
+                                 <div class="div-anketform" id="div-form">
+                                        <a id="css-link" href="form.html">DERS ALMAK İÇİN FORM DOLDURUN</a>
+                                 </div>    
+                            </div>                 
                      </article>
 
 
                      <footer id="altmenu">
                             <a href="index.html">Anasayfa</a> |
                             <a href="makale.html">Makaleler</a> |
-                            <a href="sinav.html">Deneme</a> |
+                            <a href="sinav.html">Sınav</a> |
                             <a href="anket-form.html">Anket/Form</a> |
                             <a href="iletisim.html">İletişim</a> 
                             <br>
