@@ -1,0 +1,91 @@
+<!DOCTYPE html>>
+<html lang="tr">
+       <head>
+              <meta charset="utf-8">
+              <title>Kişisel Web Sitesi</title>
+              <meta name="description" content="Kişisel Web Sitesi">
+              <meta name="keywords" content="kişisel,web,site,html,css,php,sql,javascript">
+              <link rel="stylesheet" href="style.css">
+              <script type="text/javascript" language="javascript" src="javascript.js"></script>
+       </head>
+       <body>
+              <div id="sayfa">
+                     <header id="banner">
+                            <div id="sosyalmedya">
+                                   <a href="https://tr.linkedin.com/"><img id="ikon" src="resimler/linkedin.png" height="40"></a>
+                                   <a href="https://www.instagram.com/"><img id="ikon" src="resimler/instagram.jpeg" height="40"></a>
+                                   <a href="https://twitter.com/"><img id="ikon" src="resimler/twitter.png" height="40"></a>
+                                   
+                            </div>
+                            <center><h1 id="banner-baslik">ANKET</h1></center>
+                     </header>
+
+                     <nav id="anamenu">
+                            <ul>
+                                   <li><a href="index.html">Anasayfa</a></li>
+                                   <li><a href="makale.html">Makaleler</a></li>
+                                   <li><a href="sinav.html">Sınav</a></li>
+                                   <li><a href="anket-form.html">Anket/Form</a></li>
+                                   <li><a href="iletisim.html">İletişim</a></li>
+                            </ul>
+                     </nav>
+
+                     <article id="anketform-icerik">
+                            <form name="form1" action="form.php" method="POST">
+                                   <fieldset id="formalani">
+                                          <table id="formtablo" border="0">
+                                                 <tr>
+                                                     <td>Ad Soyad: </td>
+                                                     <td><input type="text" name="adsoyad"> </td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>E-mail: </td>
+                                                     <td><input type="text" name="mail"> </td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>Telefon No: </td>
+                                                     <td><input type="text" name="mail" placeholder="(___)(_______)"> </td>
+                                                 </tr> 
+                                                 
+                                                 <tr>
+                                                     <td>TC Kimlik No: </td>
+                                                     <td><input type="text" name="tckimlik" placeholder="11 hane olmalıdır."> </td>
+                                                 </tr>
+                                                 
+                                                 <tr>
+                                                     <td>Hangi dersi almak istiyorsunuz?</td>
+                                                     <td><fieldset>
+                                                     <label style="font-size: 20px;" for="htmlders">HTML  </label><input type="checkbox" id="htmlders" value="htmlders"><br>
+                                                     <label style="font-size: 20px;"  for="cssders">CSS  </label><input type="checkbox" id="cssders" value="cssders"><br>
+                                                     <label style="font-size: 20px;"  for="jsders">JAVASCRIPT  </label><input type="checkbox" id="jsders" value="jsders">
+                                                     <label style="font-size: 20px;"  for="phpders">PHP  </label><input type="checkbox" id="phpders" value="phpders"><br>
+                                                     <label style="font-size: 20px;"  for="sqlders">SQL  </label><input type="checkbox" id="sqlders" value="sqlders">
+                                                     </td></fieldset>
+                                                 </tr>
+                                                 
+                                                 <tr>
+                                                     <td>Mesaj: </td>
+                                                     <td><textarea cols="30" rows="10" name="mesaj"></textarea> </td>
+                                                 </tr>                                   
+                                             </table>
+                                             <hr>
+                                             <input class="anketformsubmit" type="submit"><input class="anketformsubmit" type="reset">
+                                   </fieldset>
+                            </form>
+                            <p id="formyazi">Formdaki bilgileri doldurarak,<br> öğrenmek istediğiniz dili seçip bize gönderebilirsiniz.</p>
+                     </article>
+
+
+                     <footer id="altmenu">
+                            <a href="index.html">Anasayfa</a> |
+                            <a href="makale.html">Makaleler</a> |
+                            <a href="sinav.html">Sınav</a> |
+                            <a href="anket-form.html">Anket/Form</a> |
+                            <a href="iletisim.html">İletişim</a> 
+                            <br>
+                            <p>Tüm Hakları Saklıdır..</p>
+                     </footer>
+
+              </div>
+       </body>
+</html>
