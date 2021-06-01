@@ -104,7 +104,7 @@
        border-width: 1px;
        background-color: rgb(204,204,255);
        float: left;
-       background-image: url("resimler/arkaplan13.jpg");
+       background-image: url("resimler/iletisim.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
@@ -118,17 +118,19 @@
        border-width: 1px;
        background-color: rgb(189, 186, 221);
        float: left;
-       background-image: url("resimler/white5.jpg");
+       background-image: url("resimler/iletisim.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
 }
 
 .yanmenu-icerik{
+       position: relative;
+       margin-top: -5px;
        color: #646d64;
        text-shadow: -1px -1px white;
        border-style:double;
-       font-size: 24px;
+       font-size: 25px;
        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
        font-weight: bolder;
 
@@ -143,7 +145,7 @@
        float: left;
        text-align: center;
        color: black;
-       background-image: url("resimler/arkaplan13.jpg");
+       background-image: url("resimler/iletisim.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
@@ -165,38 +167,85 @@
        border-color: white;
        border-width: 1px;
        float: left;
-       background-image: url("resimler/white9.jpg");
+       font-family: Papyrus,"Sagoe UI",monospace;
+       font-size: 17px;
+       color:#436c3f;
+       font-weight: bold;
+       background-image: url("resimler/iletisim.jpg");
        background-position: center;
        background-repeat: no-repeat;
        background-size: 100%;
 }
-#iletisim-div{
+.iletisimsubmit{
+	font-family: "Orbitron",sans-serif;
+	font-size: 18px;
+       font-weight: bold;
+	background-color: #a5c3a3;
+       text-shadow: 2px 2px #52615E, -1px -1px #047ab9;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 2px;
+	cursor: pointer;
+	margin-bottom: 20px;
        position: relative;
-       margin-top: -2px;
-       border-style: double;
-       border-color: #9186a2;
-       width: 598px;
-       height: 400px;
-       text-align: center;
-       font-size: 20px;
-       background-image: url("resimler/white2.jpg");
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-color: #719293;
+       top: 2px;
+       left: 1px;
+}
+.iletisimsubmit:hover{
+	background-color: #7cb978;
 }
 #konum{
        position: relative;
-       margin-top: -2px;
+       margin-top: -1px;
        border-style: double;
        border-color: #9186a2;
        width: 600px;
        height: 150px;
 }
-#anasayfavideo{
+section{
+       position: relative;
        width: 698px;
        height: 500px;
-       margin-top: 50px;
+       margin-top: 10px;
+}
+section video{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+}
+section .navigation{
+       position: absolute;
+       bottom: -90px;
+       left: 50%;
+       transform: translate(-50%);
+       z-index: 100;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+section .navigation li{
+       list-style: none;
+       cursor: pointer;
+       margin: 0 10px;
+       border-radius: 4px;
+       background: #fff;
+       padding: 3px 3px 0;
+       opacity: 0.7;
+       transition: 0.5s;
+}
+section .navigation li:hover{
+       opacity: 1;
+}
+section .navigation li img{
+       width: 120px;
+       transition: 0.5s;
+}
+section .navigation li img:hover{
+       width: 200px;
 }
 #anketform-icerik{
        width: 998px;
@@ -268,6 +317,10 @@
        color: #62807b;
        border-color: #A0B8B1;
        font-size: 15px;
+       background-image: url("resimler/white10.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
 }
 #formalani{
        position: relative;
@@ -279,6 +332,10 @@
        font-size: 30px;
        font-weight: bold;
        border-color: #A0B8B1;
+       background-image: url("resimler/white10.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
 }
 #formtablo{
        font-weight: normal;
@@ -606,7 +663,13 @@
        background-position: center;
        background-repeat: no-repeat;
        background-size: 100%;
-       
+}
+#sinav-fieldset{
+       position: relative;
+       left: 2px;
+       padding-left: 20px;
+       width: 500px;
+       height: 530px;
 }
 .question{
        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -631,11 +694,11 @@
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
-	padding: 2px;
+	padding: 3px;
 	cursor: pointer;
 	margin-bottom: 14px;
-       position: relative;
-       margin-top: 5px;
+       float: unset;
+       margin-top: 3px;
 }
 #submit:hover{
 	background-color: #7cb978;
