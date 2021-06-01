@@ -48,7 +48,7 @@
        const submitButton = document.getElementById('submit');
        const myQuestions = [
          {
-           question: "Hangi HTML öğesi bir belgenin başlığını tanımlar?",
+           question: "1) Hangi HTML öğesi bir belgenin başlığını tanımlar?",
            answers: {
              a: "head",
              b: "meta",
@@ -57,7 +57,7 @@
            correctAnswer: "c"
          },
          {
-           question: "# işareti hangi seçiciyi belirtir?",
+           question: "2) # işareti hangi seçiciyi belirtir?",
            answers: {
              a: "class",
              b: "id",
@@ -66,7 +66,7 @@
            correctAnswer: "b"
          },
          {
-           question: "Harici (bağlantılı) CSS kullanımında stil şablonu nerede belirtilir?",
+           question: "3) Harici (bağlantılı) CSS kullanımında stil şablonu nerede belirtilir?",
            answers: {
              a: "body etiketinin içinde",
              b: "Sayfanın en başında",
@@ -76,7 +76,7 @@
            correctAnswer: "d"
          },
          {
-              question: "JavaScript'i hangi HTML öğesinin içine ekleriz?",
+              question: "4) JavaScript'i hangi HTML öğesinin içine ekleriz?",
               answers: {
                 a: "javascript",
                 b: "script",
@@ -87,7 +87,7 @@
               correctAnswer: "b"
             },
             {
-              question: "JavaScript'te, 'MyFunction' adlı bir işlev nasıl çağırılır?",
+              question: "5) JavaScript'te, 'MyFunction' adlı bir işlev nasıl çağırılır?",
               answers: {
                 a: "call function myFunction()",
                 b: "myFunction()",
@@ -101,3 +101,9 @@
      
        submitButton.addEventListener('click', showResults);
      })();
+
+
+     /*video slider*/
+     function videoUrl(videoslider){
+       document.getElementById("slider").src=videoslider;
+     }
