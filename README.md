@@ -24,7 +24,7 @@ yaptım. Sınav kısmında bir sınav oluşturdum, doğru cevaplanan sorular ye�
 
 -> PHP kullanarak sayfanın dinamikliğini arttırdım ve veritabanına bağlanarak kullanıcıya aradığı veriyi sundum.
 Doldurulan anket ve formların, gönderilen mesajların arka planda sunucu tarafından derlenip sonuç üretmesini, 
-bir arama motoru oluşturdum ve veritabanı ile PHP kodlarını bağlayarak aranılan kelimenin bulunmasını ve gösterilmesini
+bir arama motoru oluşturup, veritabanı ile PHP kodlarını bağlayarak aranılan kelimenin bulunmasını ve gösterilmesini
 sağladım.
 
 -> SQL kullanarak web sitesi için bir veritabanı oluşturdum ve PHP ile SQL arasındaki bağlantıyı sağlayarak site içinde
