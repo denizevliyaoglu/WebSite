@@ -54,7 +54,7 @@
              b: "meta",
              c: "title"
            },
-           correctAnswer: "c"
+           correctAnswer:"c"
          },
          {
            question: "2) # işareti hangi seçiciyi belirtir?",
@@ -63,7 +63,7 @@
              b: "id",
              c: "tag"
            },
-           correctAnswer: "b"
+           correctAnswer:"b"
          },
          {
            question: "3) Harici (bağlantılı) CSS kullanımında stil şablonu nerede belirtilir?",
@@ -73,7 +73,7 @@
              c: "Sayfanın en sonunda",
              d: "head../head etiketlerinin arasında"
            },
-           correctAnswer: "d"
+           correctAnswer:"d"
          },
          {
               question: "4) JavaScript'i hangi HTML öğesinin içine ekleriz?",
@@ -84,7 +84,7 @@
                 d: "js"
 
               },
-              correctAnswer: "b"
+              correctAnswer:"b"
             },
             {
               question: "5) JavaScript'te, 'MyFunction' adlı bir işlev nasıl çağırılır?",
@@ -93,7 +93,7 @@
                 b: "myFunction()",
                 c: "call myFunction()"
               },
-              correctAnswer: "b"
+              correctAnswer:"b"
             }
        ];
 
