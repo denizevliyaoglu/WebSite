@@ -4,10 +4,10 @@
               <?php
               if(isset($_POST['submit'])){
                      print_r($_POST);
-                     echo "FORMU DOLDURDUĞUNUZ İÇİN TEŞEKKÜR EDERİZ. EN KISA ZAMANDA DÖNÜŞ YAPILACAKTIR.";
+                     echo "İŞLEM BAŞARISIZ. TEKRAR DENEYİNİZ.";
               }
               else{
-                     echo "İŞLEM BAŞARISIZ. TEKRAR DENEYİNİZ.";
+                     echo "FORMU DOLDURDUĞUNUZ İÇİN TEŞEKKÜR EDERİZ. EN KISA ZAMANDA DÖNÜŞ YAPILACAKTIR.";
               }
               ?>
        </body>
