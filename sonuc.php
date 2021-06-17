@@ -2,16 +2,26 @@
 <html>
        <body>
               <?php
-                     $aramasorgusu = @mysql_real_escape_string($_POST['aramasorgusu']);
-                     $sonucsorgu = @mysql_query("SELECT * FROM sayfa WHERE banner LIKE '%".$aramasorgusu."%'" );
-                     if(@mysql_num_rows($sonucsorgu)>0){
-                     while($sorguoku=@mysql_fetch_array($sonucsorgu)){
-                     echo $sorguoku['banner'].'<br>';
-                     }
-                     }
-                     else{
-                     echo 'Aradığınız içerik bulunamadı!';
-                     }
-              ?>
+              include("sql.php");
+              $ara=$_POST["aranan"];
+
+              $sql=mysql_query("SELECT * FROM sayfa WHERE banner LIKE '%$ara%'");
+
+              $bul = mysql_num_rows($sql);
+
+              if($bul > 0) {
+              while($yaz=mysql_fetch_array($sql)) {
+              $anasayfa=$yaz['anasayfa'];
+              $makaleler=$yaz['makaleler'];
+              $sinav=$yaz['sınav'];
+              $anketform=$yaz['anketform'];
+              $iletisim=$yaz['iletisim'];
+              }
+              } else {
+              echo "<br>";
+              echo "<font color='gray' size='4'>Aradığınız kelime ile ilgili bir  sonuç bulunamadı</font>";
+              };
+              
+       ?>
        </body>
 </html>
